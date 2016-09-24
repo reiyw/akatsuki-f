@@ -6,7 +6,7 @@ public class DropObject : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPo
 {
 	public Image iconImage;
 	private Sprite nowSprite;
-	public GameObject gameObject;
+	public GameObject stopObject;
 
 	void Start()
 	{
@@ -38,7 +38,7 @@ public class DropObject : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPo
 		iconImage.color = Vector4.one;
 
 		if (nowSprite.name == "TS_003") {
-			gameObject.gameObject.SetActive(true);
+			stopObject.gameObject.SetActive(true);
 		}
 	}
 }
