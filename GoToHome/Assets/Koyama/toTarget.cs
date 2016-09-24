@@ -13,5 +13,7 @@ public class toTarget : MonoBehaviour {
 	void Update () {
         agent.SetDestination(target.transform.position);
         //transform.Translate(target.transform.position - transform.position);
+
+        
 	}
 }
